@@ -7,6 +7,50 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Получение курсов валют
+
+Ниже примеры использования.
+
+Валюты по умолчанию (EUR, USD, KGS):
+
+    $ sail artisan app:show-money-rates
+    EUR:
+    2023-09-04      104.6108
+    2023-09-05      104.4171
+    2023-09-06      104.9043
+    2023-09-07      105.0789
+    
+    USD:
+    2023-09-04      96.3411
+    2023-09-05      96.6199
+    2023-09-06      97.5383
+    2023-09-07      97.8439
+    
+    KGS:
+    2023-09-04      10.9158
+    2023-09-05      10.9479
+    2023-09-06      11.05
+    2023-09-07      11.0846
+
+Курсы только для валют USD и KGS:
+
+    $ sail artisan app:show-money-rates USD KGS
+    USD:
+    2023-09-04      96.3411
+    2023-09-05      96.6199
+    2023-09-06      97.5383
+    2023-09-07      97.8439
+    
+    KGS:
+    2023-09-04      10.9158
+    2023-09-05      10.9479
+    2023-09-06      11.05
+    2023-09-07      11.0846
+
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Unit\Services\MoneyConv;
+namespace App\Services\MoneyConv;
 
 use App\Services\MoneyConv\RateParser;
 
